@@ -5,14 +5,27 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout/layout.js"),
+        },
+        extensions: [".md", ".mdx"],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "guides",
+        path: `${__dirname}/src/guides/`,
       },
-      __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/guides`,
+      },
     },
   ],
 };

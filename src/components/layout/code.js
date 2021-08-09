@@ -16,16 +16,18 @@ const Code = ({ children, className }) => {
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
           className={className}
-          style={{ ...style, padding: "10px 0", "font-size": "14pt" }}
+          style={{
+            ...style,
+            padding: "10px",
+            "font-size": "12pt",
+            margin: "10px 0",
+          }}
         >
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line, key: i })}>
               {line.map((token, key) => {
                 if (token.empty && i === tokens.length - 1) {
                   return null;
-                }
-                if (token.content !== "  " && key === 0 && i === 0) {
-                  token.content = "  " + token.content;
                 }
                 return <span key={key} {...getTokenProps({ token, key })} />;
               })}
