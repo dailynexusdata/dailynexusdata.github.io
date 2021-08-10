@@ -75,7 +75,7 @@ console.log(myObj.name); // "Labyrinth"
 
 ### Object Destructuring
 
-We can values out of objects into individual variables with the same name as follows:
+We can values out of objects into individual variables with the same name as follows: 
 
 ```js
 const { name, nWriters } = myObj;
