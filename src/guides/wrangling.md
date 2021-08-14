@@ -20,6 +20,8 @@ const myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ### Map
 
+Map returns an array where a function is applied to each element of the original array.
+
 Using `.map()` to return an array of the squares of `myArr`.
 
 ```js
@@ -49,10 +51,12 @@ console.log(indices) // [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 ### Filter
 
-Get the even numbers of the array using `.filter()`
+Filter returns an array of elements in the original array that meet a condition.
+
+Get the even numbers of the array using `.filter()`. The `%` is the modulus operator which returns the remained after a division. When you divide an even number by 2, there should be a remainder of zero. .filter() returns the values where the passed in function returns `true`.
 
 ```js
-const evenNumbers = myArr.filter(x => x % 2 == 0);
+const evenNumbers = myArr.filter(x => x % 2 === 0);
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
 
