@@ -7,7 +7,7 @@ import LabyrinthHeader from "../../images/headerLogo.png";
 const Header = () => {
   return (
     <>
-      <img src={LabyrinthHeader} />
+      <img src={LabyrinthHeader} alt="Daily Nexus Labyrinth Header" />
       <Link to="../guides">Guides</Link>
     </>
   );

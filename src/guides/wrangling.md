@@ -29,6 +29,8 @@ const squares = myArr.map(x => x**2);
 console.log(squares); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
+![test](../../static/images/arrayMapExample.png)
+
 We can also use more complex functions:
 
 ```js
@@ -55,10 +57,13 @@ Filter returns an array of elements in the original array that meet a condition.
 
 Get the even numbers of the array using `.filter()`. The `%` is the modulus operator which returns the remained after a division. When you divide an even number by 2, there should be a remainder of zero. .filter() returns the values where the passed in function returns `true`.
 
+![](../../static/images/arrayFilterExample.png)
+
 ```js
 const evenNumbers = myArr.filter(x => x % 2 === 0);
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
+
 
 ## Javascript Objects
 

@@ -19,7 +19,7 @@ const Code = ({ children, className }) => {
           style={{
             ...style,
             padding: "10px",
-            "font-size": "12pt",
+            fontSize: "12pt",
             margin: "10px 0",
           }}
         >

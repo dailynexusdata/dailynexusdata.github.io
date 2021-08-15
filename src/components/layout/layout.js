@@ -32,7 +32,11 @@ const p = styled.p`
   margin: 5px 0;
 `;
 
-const shortcodes = { code: Code, h2, p, h3 };
+const img = styled.img`
+  width: 100%;
+`;
+
+const shortcodes = { code: Code, h2, p, h3, img };
 
 export default function Layout({ children }) {
   return (
