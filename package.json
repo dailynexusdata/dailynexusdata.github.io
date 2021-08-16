@@ -1,0 +1,36 @@
+{
+  "name": "guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Guide",
+  "author": "alrudolph",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "npm run build && gh-pages -d public",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@deckdeckgo/highlight-code": "^3.3.1",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "babel-plugin-styled-components": "^1.13.2",
+    "gatsby": "^3.11.0",
+    "gatsby-plugin-mdx": "^2.11.0",
+    "gatsby-plugin-styled-components": "^4.11.0",
+    "gatsby-remark-highlight-code": "^3.0.1",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-remark": "^4.8.0",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
