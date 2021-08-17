@@ -20,9 +20,9 @@ const myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ### Map
 
-Map returns an array where a function is applied to each element of the original array.
+Map applies a function to each element of an array and returns a new array of the function outputs.
 
-Using `.map()` to return an array of the squares of `myArr`.
+Use `.map()` to return an array of the squares of `myArr`.
 
 ```js
 const squares = myArr.map(x => x**2);
@@ -44,7 +44,7 @@ const factorials = myArr.map((x) => {
 console.log(factorials); // [1, 2, 6, 24, 120, 720, 5040, 40320, 362880]
 ```
 
-The index of the element is passed in as the second item:
+The index of each element is passed in as the second item:
 
 ```js
 const indices = myArr.map((x, i) => i)
@@ -53,9 +53,9 @@ console.log(indices) // [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 ### Filter
 
-Filter returns an array of elements in the original array that meet a condition.
+The filter operation returns an array of elements from the original array that meet a specified condition.
 
-Get the even numbers of the array using `.filter()`. The `%` is the modulus operator which returns the remained after a division. When you divide an even number by 2, there should be a remainder of zero. .filter() returns the values where the passed in function returns `true`.
+`.filter()` returns the `true` values from the elements passed through a function. The `%` is the modulus operator which returns the remainder after division. When you divide an even number by 2, there will always be a remainder of zero. Get the even numbers of `myArr` using `.filter()`.
 
 ![](../../static/images/arrayFilterExample.png)
 
@@ -63,7 +63,6 @@ Get the even numbers of the array using `.filter()`. The `%` is the modulus oper
 const evenNumbers = myArr.filter(x => x % 2 === 0);
 console.log(evenNumbers); // [2, 4, 6, 8]
 ```
-
 
 ## Javascript Objects
 
@@ -84,7 +83,7 @@ console.log(myObj.name); // "Labyrinth"
 
 ### Object Destructuring
 
-We can values out of objects into individual variables with the same name as follows: 
+We can turn object values into individual variables as follows: 
 
 ```js
 const { name, nWriters } = myObj;
@@ -93,7 +92,7 @@ console.log(name, nWriters) // "Labyrinth", 5
 
 ## Wrangling with D3
 
-Often times our data will be arrays of objects. This array contains data for 3 students.
+Oftentimes, our data will be arrays of objects. This array contains data for 3 students.
 
 ```js
 const students = [
@@ -105,18 +104,18 @@ const students = [
 
 ### d3.max()
 
-We can get the max gpa of all students:
+We can get the maximum gpa of all students:
 
 ```js
 const maxGpa = d3.max(students, d => d.gpa)
 console.log(maxGpa) // 3.75
 ```
 
-The first argument passed into `d3.max()` has to be an array of values, then the second argument can be a function that returns a value for each element in the passed in array.
+The first argument passed into `d3.max()` must be an array of values. Then, the second argument can be a function that returns a value for each element of the array.
 
 ### d3.nest()
 
-Often, we'll want to group data by a common value. Here, we're going to group together students with the same major using `d3.nest()`
+Often, we'll want to group data by a common value. Here, we're going to group together students with the same major using `d3.nest()`.
 
 ```js
 const nestedData = d3Collection
@@ -140,13 +139,13 @@ console.log(nestedData)
 // ]
 ```
 
-Here, we tell d3 that we want to group values by the major, by passing in a function to get the major value in `.key()`. Then we pass the entire array in with `.entries()`.
+Here, we pass a function through `.key()` for the major value. This tells d3 to group the data by major. Then, we pass the entire array through by entering the array name into `.entries()`.
 
 
-If we wanted to get the max GPA by department, we can map this array and then use `d3.max()` to get the max value form each department's `values` key.
+If we want to get the maximum GPA by major, we can map the `nestedData` array and then use `d3.max()` to get the maximum value from each major's `values` key.
 
 ```js
-const maxGpaByDept = nestedData.map(({ key, values }) => ({
+const maxGpaByDept = nestedData.map({ key, values }) => ({
     key,
     maxGPA: d3.max(values, (d) => d.gpa),
 }));

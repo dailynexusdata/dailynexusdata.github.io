@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby clean && gatsby build && gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "npm run build && gh-pages -d public",
     "clean": "gatsby clean"
