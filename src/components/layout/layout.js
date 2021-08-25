@@ -29,14 +29,14 @@ const h3 = styled.h3`
 `;
 
 const p = styled.p`
-  margin: 5px 0;
+  margin: 20px 0;
 `;
 
 const img = styled.img`
   width: 100%;
 `;
 
-const shortcodes = { code: Code, h2, p, h3, img };
+const shortcodes = { code: Code, h2, p, h3, img, Divider };
 
 export default function Layout({ children }) {
   return (

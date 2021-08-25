@@ -107,7 +107,9 @@ const students = [
 We can get the maximum gpa of all students:
 
 ```js
-const maxGpa = d3.max(students, d => d.gpa)
+import { max } from "d3-array";
+
+const maxGpa = max(students, d => d.gpa)
 console.log(maxGpa) // 3.75
 ```
 
@@ -118,8 +120,9 @@ The first argument passed into `d3.max()` must be an array of values. Then, the 
 Often, we'll want to group data by a common value. Here, we're going to group together students with the same major using `d3.nest()`.
 
 ```js
-const nestedData = d3Collection
-    .nest()
+import { nest } from "d3-collection";
+
+const nestedData = nest()
     .key((d) => d.major)
     .entries(students)
 
@@ -147,7 +150,7 @@ If we want to get the maximum GPA by major, we can map the `nestedData` array an
 ```js
 const maxGpaByDept = nestedData.map({ key, values }) => ({
     key,
-    maxGPA: d3.max(values, (d) => d.gpa),
+    maxGPA: max(values, (d) => d.gpa),
 }));
 
 console.log(maxGpaByDept);

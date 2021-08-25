@@ -7,8 +7,15 @@ import Page from "../components/global/page";
 const Guides = () => {
   return (
     <Page>
-      <Link to="../installation">Installation</Link>
-      <Link to="../wrangling">Data Wrangling</Link>
+      <div>
+        <Link to="../installation">Installation</Link>
+      </div>
+      <div>
+        <Link to="../wrangling">Data Wrangling</Link>
+      </div>
+      <div>
+        <Link to="../barchartExample">Bar Chart Example</Link>
+      </div>
     </Page>
   );
 };
