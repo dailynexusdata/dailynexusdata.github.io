@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkguide=self.webpackChunkguide||[]).push([[739],{8916:function(e,n,t){t.r(n);var a=t(7294),l=t(5444),r=t(5322);n.default=function(){return a.createElement(r.Z,null,a.createElement(l.rU,{to:"../installation"},"Installation"),a.createElement(l.rU,{to:"../wrangling"},"Data Wrangling"))}}}]);
-//# sourceMappingURL=component---src-pages-guides-js-fd6a283a92c0c24c27cd.js.map

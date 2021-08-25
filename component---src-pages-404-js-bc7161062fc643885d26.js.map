@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-404-js-bc7161062fc643885d26.js","mappings":"kIAIA,qBACE,OAAO,gBAAC,IAAD","sources":["webpack://guide/./src/pages/404.js"],"sourcesContent":["import React from \"react\";\r\n\r\nimport Page from \"../components/global/page\";\r\n\r\nexport default () => {\r\n  return <Page>404</Page>;\r\n};\r\n"],"names":[],"sourceRoot":""}

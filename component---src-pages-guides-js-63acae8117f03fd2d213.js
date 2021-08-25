@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkguide=self.webpackChunkguide||[]).push([[739],{8916:function(e,t,l){l.r(t);var n=l(7294),a=l(5444),r=l(8298);t.default=function(){return n.createElement(r.Z,null,n.createElement("div",null,n.createElement(a.rU,{to:"../installation"},"Installation")),n.createElement("div",null,n.createElement(a.rU,{to:"../wrangling"},"Data Wrangling")),n.createElement("div",null,n.createElement(a.rU,{to:"../barchartExample"},"Bar Chart Example")))}}}]);
+//# sourceMappingURL=component---src-pages-guides-js-63acae8117f03fd2d213.js.map
