@@ -1,6 +1,7 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
 import styled from "styled-components";
+import {Link} from "gatsby"
 
 import Page from "../global/page";
 import Code from "./code";
@@ -36,7 +37,7 @@ const img = styled.img`
   width: 100%;
 `;
 
-const shortcodes = { code: Code, h2, p, h3, img, Divider };
+const shortcodes = { code: Code, h2, p, h3, img, Divider, Link };
 
 export default function Layout({ children }) {
   return (

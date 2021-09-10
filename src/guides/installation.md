@@ -34,9 +34,9 @@ Open up your extensions by clicking on the icon with 4 blocks, 1 of which is rem
 
 Type in 'live server' and install the first extension that shows up.
 
-### Prettier
+### Prettier ESLint
 
-Go to extensions again and this time type in 'Prettier'. Install the first option, 'Prettier - Code Formatter'
+Go to extensions again and this time type in 'Prettier ESLint'. Install the second option, 'Prettier ESLint', currently it has over 300,000 downloads.
 
 <Divider />
 

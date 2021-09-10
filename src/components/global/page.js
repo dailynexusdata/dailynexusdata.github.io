@@ -20,7 +20,7 @@ const Main = styled.main`
 `;
 
 const Content = styled.div`
-  width: 800px;
+  width: 700px;
 `;
 
 const Page = ({ children }) => {
