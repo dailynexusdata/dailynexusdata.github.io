@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkguide=self.webpackChunkguide||[]).push([[883],{9616:function(e,t,n){n.r(t);var u=n(7294),l=n(8298);t.default=function(){return u.createElement(l.Z,null,u.createElement("h1",null,"404"),"Looks like you got lost in the Labyrinth!")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-247f4607f1f42a5e7992.js.map
