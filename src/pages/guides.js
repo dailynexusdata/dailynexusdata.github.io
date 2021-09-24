@@ -11,6 +11,15 @@ const Guides = () => {
         <Link to="../installation">Installation</Link>
       </div>
       <div>
+        <Link to="../colors">Colors</Link>
+      </div>
+      <div>
+        <Link to="../d3/imports">D3 Imports</Link>
+      </div>
+      <div>
+        <Link to="../d3/scales">D3 Scales</Link>
+      </div>
+      <div>
         <Link to="../style">Javascript Style Guide</Link>
       </div>
       <div>
